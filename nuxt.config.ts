@@ -50,6 +50,6 @@ export default defineNuxtConfig({
 
   routeRules: {
     // Disable homepage pre-rendered at build time
-    '/': { prerender: false },
-  }
+    "/": { prerender: false },
+  },
 });
