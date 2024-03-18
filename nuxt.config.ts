@@ -2,7 +2,6 @@
 
 import Locales from "./locales";
 
-const DNA_LAYER_PATH = process.env.DNA_LAYER_PATH;
 const NUXT_PUBLIC_API_BASE = process.env.NUXT_PUBLIC_API_BASE;
 
 export default defineNuxtConfig({
@@ -13,7 +12,7 @@ export default defineNuxtConfig({
       apiBase: NUXT_PUBLIC_API_BASE,
     },
   },
-  extends: [DNA_LAYER_PATH, "./auth"],
+  extends: ["./auth"],
   css: [
     "vue3-toastify/dist/index.css",
     "@/assets/css/main.css",
