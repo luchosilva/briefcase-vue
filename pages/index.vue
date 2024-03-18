@@ -11,7 +11,7 @@
           </button>
         </div>
         <div class="col-span-8 max-h-[80dvh] overflow-auto scroll-m-1">
-          <!-- <projects /> -->
+          <projects />
         </div>
       </div>
     </div>
@@ -19,8 +19,6 @@
 </template>
 
 <script setup lang="ts">
-// import projects from "../components/projects/Projects.vue";
-
 definePageMeta({
   layout: "landing",
   auth: false,
