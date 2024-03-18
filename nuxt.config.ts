@@ -39,4 +39,12 @@ export default defineNuxtConfig({
   },
 
   sourcemap: { server: true, client: false },
+
+  nitro: {
+    baseURL: NUXT_PUBLIC_API_BASE,
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+    },
+  },
 });
