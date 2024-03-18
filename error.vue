@@ -1,5 +1,9 @@
 <template>
-  <Html :class="mode" :data-theme="mode">
+<!DOCTYPE html>
+  <Html :class="mode" :data-theme="mode" lang="en" xml:lang="en">
+  <head>
+    <title>Error</title>
+  </head>
   <Body
     class="antialiased duration-300 transition-colors text-gray-800 bg-gray-50 dark:text-gray-200 dark:bg-gradient-to-br dark:to-gray-900 dark:from-cyan-800 dark:to-blue-900">
     <div class="hero h-screen">
@@ -13,7 +17,7 @@
           </div>
           <div class="mt-9">
             <button class="btn btn-primary ml-3" @click="handleError">
-              {{ $t("error.back") }}
+              <!-- {{ $t("error.back") }} -->
             </button>
           </div>
         </div>
