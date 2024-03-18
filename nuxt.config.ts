@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     langDir: "locales/",
     locales: Locales,
     defaultLocale: "es",
+    lazy: true,
   },
 
   imports: {
