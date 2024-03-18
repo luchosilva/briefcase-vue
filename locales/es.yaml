@@ -10,7 +10,7 @@ pages:
   index:
     title: 'Luis Hernán Silva Quezada'
     description: 'Desarrollador de software 🚀'
-    contact-by-email: 'Envíame un correo ✉️'
+    'contact-by-email': 'Envíame un correo ✉️'
     projects:
       - name: 'Proyecto 1'
         description: 'Descripción 1'
