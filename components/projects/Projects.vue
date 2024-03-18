@@ -11,12 +11,12 @@
                 </div>
                 <div class="timeline-start md:text-end mb-10">
                     <time class="font-mono italic">
-                        {{ $t('pages.index.projects[0].range') }}
+                        {{ t('pages.index.projects[0].range') }}
                     </time>
                     <div class="text-lg font-black">
-                        {{ $t('pages.index.projects[0].name') }}
+                        {{ t('pages.index.projects[0].name') }}
                     </div>
-                    {{ $t('pages.index.projects[0].description') }}
+                    {{ t('pages.index.projects[0].description') }}
                 </div>
                 <hr class="bg-primary" />
             </li>
@@ -31,12 +31,12 @@
                 </div>
                 <div class="timeline-end mb-10">
                     <time class="font-mono italic">
-                        {{ $t('pages.index.projects[1].range') }}
+                        {{ t('pages.index.projects[1].range') }}
                     </time>
                     <div class="text-lg font-black">
-                        {{ $t('pages.index.projects[1].name') }}
+                        {{ t('pages.index.projects[1].name') }}
                     </div>
-                    {{ $t('pages.index.projects[1].description') }}
+                    {{ t('pages.index.projects[1].description') }}
                 </div>
                 <hr class="bg-primary" />
             </li>
@@ -52,12 +52,12 @@
                 </div>
                 <div class="timeline-start md:text-end mb-10">
                     <time class="font-mono italic">
-                        {{ $t('pages.index.projects[2].range') }}
+                        {{ t('pages.index.projects[2].range') }}
                     </time>
                     <div class="text-lg font-black">
-                        {{ $t('pages.index.projects[2].name') }}
+                        {{ t('pages.index.projects[2].name') }}
                     </div>
-                    {{ $t('pages.index.projects[2].description') }}
+                    {{ t('pages.index.projects[2].description') }}
                 </div>
                 <hr class="bg-primary" />
             </li>
@@ -72,12 +72,12 @@
                 </div>
                 <div class="timeline-end mb-10">
                     <time class="font-mono italic">
-                        {{ $t('pages.index.projects[3].range') }}
+                        {{ t('pages.index.projects[3].range') }}
                     </time>
                     <div class="text-lg font-black">
-                        {{ $t('pages.index.projects[3].name') }}
+                        {{ t('pages.index.projects[3].name') }}
                     </div>
-                    {{ $t('pages.index.projects[3].description') }}
+                    {{ t('pages.index.projects[3].description') }}
                 </div>
             </li>
         </ul>
@@ -85,4 +85,7 @@
 </template>
 
 <script setup lang="ts">
+
+const { t } = useI18n()
+
 </script>
