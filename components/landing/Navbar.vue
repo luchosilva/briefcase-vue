@@ -16,7 +16,7 @@
         <button tabindex="0" class="btn btn-ghost">
           <Icon name="la:language" size="1.2em" />
         </button>
-        <ul tabindex="0"
+        <ul
           class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-lg w-40 border dark:border-none">
           <li v-for="availableLocale in availableLocales" :key="availableLocale.code">
             <a @click="changeLocale(availableLocale.code)" class="cursor-pointer">
@@ -31,7 +31,7 @@
         <button tabindex="0" class="btn btn-ghost">
           <Icon name="uil:sun" size="1.2em" />
         </button>
-        <ul tabindex="0"
+        <ul
           class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-box w-40">
           <li>
             <a @click="setTheme('light')" class="cursor-pointer">
