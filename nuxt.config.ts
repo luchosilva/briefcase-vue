@@ -47,9 +47,4 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
-
-  routeRules: {
-    // Disable homepage pre-rendered at build time
-    "/": { prerender: false },
-  },
 });
