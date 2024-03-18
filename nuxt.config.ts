@@ -12,7 +12,6 @@ export default defineNuxtConfig({
       apiBase: NUXT_PUBLIC_API_BASE,
     },
   },
-  extends: ["./auth"],
   css: [
     "vue3-toastify/dist/index.css",
     "@/assets/css/main.css",
@@ -41,7 +40,7 @@ export default defineNuxtConfig({
   sourcemap: { server: true, client: false },
 
   nitro: {
-    baseURL: NUXT_PUBLIC_API_BASE,
+    compressPublicAssets: true,
     prerender: {
       crawlLinks: true,
       failOnError: false,
