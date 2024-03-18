@@ -1,0 +1,29 @@
+version: 0.2
+
+env:
+  secrets-manager:
+    GIGET_AUTH: arn:aws:secretsmanager:us-east-1:441641401603:secret:acroventus/githubToken-gannxF:GITHUB_TOKEN
+
+phases:
+  install:
+    commands:
+      - npm i npm@9.5.1 -g
+      - npm install -g pnpm@7
+      - pip install --upgrade pip
+      - pip install --upgrade awscli
+      - pnpm install --shamefully-hoist --no-frozen-lockfile
+
+  pre_build:
+    commands:
+      - echo Pre_build Phase
+      - cd ../src
+      - pnpm install --shamefully-hoist --no-frozen-lockfile
+  build:
+    commands:
+      - echo Build Phase
+      - export NUXT_PUBLIC_API_BASE=$BACKEND_API_BASE
+      - pnpm nuxi generate
+  post_build:
+    commands:
+      - echo PostBuild Phase
+      - aws s3 sync .output/public $S3_BUCKET

@@ -1,0 +1,37 @@
+<template>
+  <div>
+    <slot name="app-before" />
+    <div id="app-before"></div>
+    <div class="flex flex-col min-h-screen dark:bg-gradient-to-br dark:from-cyan-800 dark:to-blue-900">
+      <div class="drawer h-screen">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col">
+          <slot name="header">
+            <LandingNavbar />
+          </slot>
+          <div class="flex-1 w-full flex flex-col">
+            <div class="relative flex-1 flex flex-col mx-auto max-w-8xl w-full h-full">
+              <slot />
+            </div>
+          </div>
+          <slot name="footer">
+            <LandingFooter />
+          </slot>
+          <slot name="app-after" />
+          <div id="app-after"></div>
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer-3" class="drawer-overlay"></label>
+          <ul class="menu p-4 w-80 bg-base-100">
+            <li><a>Sidebar Item 1</a></li>
+            <li><a>Sidebar Item 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts"></script>
+
+<style scoped></style>

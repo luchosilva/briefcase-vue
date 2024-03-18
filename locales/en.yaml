@@ -1,0 +1,28 @@
+landing:
+    nav:
+      themeSelector:
+        dark: 'Dark'
+        light: 'Light'
+    foot:
+      description: ''
+pages:
+  index:
+    title: 'Luis Hernán Silva Quezada'
+    description: 'Software Developer 🚀'
+    'contact-by-email': 'Send me an email ✉️'
+    projects:
+      - name: 'Project 1'
+        description: 'Description 1'
+        range: 'Feb 2020 - Mar 2021'
+      - name: 'Project 2'
+        description: 'Description 2'
+        range: 'Apr 2021 - Dec 2022'
+      - name: 'Project 3'
+        description: 'Description 3'
+        range: 'Jan 2023 - Present'
+      - name: ''
+        description: 'Comming soon...'
+        range: ''
+
+error:
+  back: 'Back'      

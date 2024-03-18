@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vfm__overlay,
+.Toastify__toast {
+  @apply backdrop-blur-md bg-base-100/70;
+}
+
+:root {
+  --app-font-family: "Poppins", sans-serif;
+  
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #21242a;
+  --toastify-color-info: #6f4cb7;
+  --toastify-color-success: #75b943;
+  --toastify-color-warning: #fbbf11;
+  --toastify-color-error: #e94539;
+}
+
+/* 
+button:disabled,
+button[disabled] {
+  border: 1px solid hsl(var(--s)) !important;
+  background-color: hsl(var(--s)) !important;
+  color: hsl(var(--sc)) !important;
+  opacity: 0.5;
+} */
+
+.custom-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--n));
+  border-radius: 15px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:active {
+  background-color: hsl(var(--n));
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--n));
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0);
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: hsl(var(--b3));
+  border-radius: 15px;
+}
