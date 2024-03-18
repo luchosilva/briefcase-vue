@@ -19,6 +19,8 @@
 </template>
 
 <script setup lang="ts">
+import projects from "../components/projects/Projects.vue";
+
 definePageMeta({
   layout: "landing",
   auth: false,

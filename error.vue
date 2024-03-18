@@ -1,6 +1,5 @@
 <template>
   <Html :class="mode" :data-theme="mode">
-
   <Body
     class="antialiased duration-300 transition-colors text-gray-800 bg-gray-50 dark:text-gray-200 dark:bg-gradient-to-br dark:to-gray-900 dark:from-cyan-800 dark:to-blue-900">
     <div class="hero h-screen">

@@ -1,6 +1,6 @@
-import { BeforeFetchContext, createFetch } from '@vueuse/core'
+import { createFetch, type BeforeFetchContext } from "@vueuse/core";
 
-const runtimeConf = useRuntimeConfig()
+const runtimeConf = useRuntimeConfig();
 
 const beforeFetch = async ({
   options,
@@ -8,8 +8,8 @@ const beforeFetch = async ({
   /* const myToken = await getMyToken()
   options.headers.Authorization = `Bearer ${myToken}` */
 
-  return { options }
-}
+  return { options };
+};
 
 export const useApi = createFetch({
   baseUrl: runtimeConf.public.apiBase,
@@ -17,6 +17,6 @@ export const useApi = createFetch({
     beforeFetch,
   },
   fetchOptions: {
-    mode: 'cors',
+    mode: "cors",
   },
-})
+});

@@ -1,3 +1,3 @@
-import { Limits } from "~/repositories/types"
+import type { Limits } from "~/repositories/types";
 
-export type QueryParams<T> = Partial<T> & Limits
+export type QueryParams<T> = Partial<T> & Limits;
