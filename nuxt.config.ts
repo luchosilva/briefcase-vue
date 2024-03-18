@@ -40,9 +40,8 @@ export default defineNuxtConfig({
   sourcemap: { server: true, client: false },
 
   nitro: {
-    compressPublicAssets: true,
     prerender: {
-      crawlLinks: true,
+      crawlLinks: false,
       failOnError: false,
     },
   },
