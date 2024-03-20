@@ -1,7 +1,9 @@
 <template>
   <div class="hero min-h-full">
     <div class="px-5 w-full">
-      <div class="grid md:grid-cols-12 gap-5 w-full items-center justify-items-center">
+      <div
+        class="grid md:grid-cols-12 gap-5 w-full items-center justify-items-center"
+      >
         <div class="max-w-md text-center col-span-4">
           <!-- <profile /> -->
         </div>
@@ -14,8 +16,8 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
+/* definePageMeta({
   layout: "landing",
   auth: false,
-})
+}) */
 </script>
