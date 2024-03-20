@@ -2,22 +2,25 @@
   <div>
     <slot name="app-before" />
     <div id="app-before"></div>
-    <div class="flex flex-col min-h-screen dark:bg-gradient-to-br dark:from-cyan-800 dark:to-blue-900">
+    <div
+      class="flex flex-col min-h-screen dark:bg-gradient-to-br dark:from-cyan-800 dark:to-blue-900"
+    >
       <div class="drawer h-screen">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           <slot name="header">
-          Navbar
+            Navbar
             <!-- <LandingNavbar /> -->
           </slot>
           <div class="flex-1 w-full flex flex-col">
-            <div class="relative flex-1 flex flex-col mx-auto max-w-8xl w-full h-full">
+            <div
+              class="relative flex-1 flex flex-col mx-auto max-w-8xl w-full h-full"
+            >
               <slot />
             </div>
           </div>
           <slot name="footer">
-          Footer
-            <!-- <LandingFooter /> -->
+            <landing-footer />
           </slot>
           <slot name="app-after" />
           <div id="app-after"></div>
