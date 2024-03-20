@@ -6,7 +6,11 @@ module.exports = {
   content: [
     "./index.html",
     "./pages/**/*.{html,js,vue}",
-    "./components/**/*.{html,js,vue}",
+    "./components/**/*.{html,js,ts,vue}",
+    "./layouts/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
+    "./app.vue",
   ],
   darkMode: "class",
   plugins: [typography, daisyui],

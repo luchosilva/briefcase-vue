@@ -21,6 +21,13 @@ export default defineNuxtConfig({
     "@/assets/css/calendar.css",
   ],
 
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   modules: [
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
