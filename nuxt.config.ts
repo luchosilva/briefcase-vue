@@ -7,6 +7,7 @@ const NUXT_PUBLIC_API_BASE = process.env.NUXT_PUBLIC_API_BASE;
 export default defineNuxtConfig({
   ssr: true,
   spaLoadingTemplate: false,
+  devtools: { enabled: true },
   runtimeConfig: {
     public: {
       apiBase: NUXT_PUBLIC_API_BASE,
