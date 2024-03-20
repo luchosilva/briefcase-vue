@@ -5,13 +5,16 @@ import Locales from "./locales";
 const NUXT_PUBLIC_API_BASE = process.env.NUXT_PUBLIC_API_BASE;
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   spaLoadingTemplate: false,
   runtimeConfig: {
     public: {
       apiBase: NUXT_PUBLIC_API_BASE,
     },
   },
+
+  extends: ["./auth"],
+
   css: [
     "vue3-toastify/dist/index.css",
     "@/assets/css/main.css",

@@ -18,15 +18,6 @@
   --toastify-color-error: #e94539;
 }
 
-/* 
-button:disabled,
-button[disabled] {
-  border: 1px solid hsl(var(--s)) !important;
-  background-color: hsl(var(--s)) !important;
-  color: hsl(var(--sc)) !important;
-  opacity: 0.5;
-} */
-
 .custom-scroll::-webkit-scrollbar {
   width: 10px;
   height: 10px;
