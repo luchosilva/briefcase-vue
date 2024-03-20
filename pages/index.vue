@@ -8,7 +8,7 @@
           <briefcase-profile />
         </div>
         <div class="col-span-8 max-h-[80dvh] overflow-auto scroll-m-1">
-          <briefcase-timeline />
+          <!-- <briefcase-timeline /> -->
         </div>
       </div>
     </div>
