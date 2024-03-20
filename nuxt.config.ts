@@ -5,7 +5,7 @@ import Locales from "./locales";
 const NUXT_PUBLIC_API_BASE = process.env.NUXT_PUBLIC_API_BASE;
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   spaLoadingTemplate: false,
   runtimeConfig: {
     public: {
