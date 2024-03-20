@@ -9,8 +9,7 @@
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           <slot name="header">
-            Navbar
-            <!-- <LandingNavbar /> -->
+            <landing-navbar />
           </slot>
           <div class="flex-1 w-full flex flex-col">
             <div
