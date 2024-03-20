@@ -18,8 +18,8 @@
 </template>
 
 <script setup lang="ts">
-/* definePageMeta({
+definePageMeta({
   layout: "landing",
   auth: false,
-}) */
+})
 </script>
