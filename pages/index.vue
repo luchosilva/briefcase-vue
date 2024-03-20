@@ -5,9 +5,11 @@
         class="grid md:grid-cols-12 gap-5 w-full items-center justify-items-center"
       >
         <div class="max-w-md text-center col-span-4">
-          <briefcase-profile />
+          profile
+          <!-- <briefcase-profile /> -->
         </div>
         <div class="col-span-8 max-h-[80dvh] overflow-auto scroll-m-1">
+          timeline
           <!-- <briefcase-timeline /> -->
         </div>
       </div>
@@ -16,8 +18,6 @@
 </template>
 
 <script setup lang="ts">
-import BriefcaseProfile from "@/components/briefcase/Profile.vue";
-
 /* definePageMeta({
   layout: "landing",
   auth: false,
