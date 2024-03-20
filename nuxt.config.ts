@@ -5,7 +5,7 @@ import Locales from "./locales";
 const NUXT_PUBLIC_API_BASE = process.env.NUXT_PUBLIC_API_BASE;
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   spaLoadingTemplate: false,
   devtools: { enabled: true },
   runtimeConfig: {
@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     dirs: ["./auth/stores"],
   },
 
-  sourcemap: { server: true, client: false },
+  sourcemap: { server: true, client: true },
 
   nitro: {
     debug: true,
