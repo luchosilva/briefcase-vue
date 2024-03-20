@@ -16,6 +16,8 @@
 </template>
 
 <script setup lang="ts">
+import BriefcaseProfile from "@/components/briefcase/Profile.vue";
+
 /* definePageMeta({
   layout: "landing",
   auth: false,
