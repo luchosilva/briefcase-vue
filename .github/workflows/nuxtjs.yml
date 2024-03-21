@@ -91,13 +91,9 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        # uses: actions/deploy-pages@v4
-      # - uses: JamesIves/github-pages-deploy-action@v4.4.0
-        # with:
-          # FOLDER: '.output/public'
-          # CLEAN: true
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           BRANCH: main
-          FOLDER: '.output/public'
+          FOLDER: './.output/public'
           CLEAN: true
+        # uses: actions/deploy-pages@v4
