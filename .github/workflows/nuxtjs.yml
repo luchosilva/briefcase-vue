@@ -95,6 +95,6 @@ jobs:
         with:
           # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: main
-          FOLDER: '../output/public'
+          FOLDER: '../.output/public'
           CLEAN: true
         # uses: actions/deploy-pages@v4
