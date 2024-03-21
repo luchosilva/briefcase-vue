@@ -1,0 +1,2 @@
+import{d as s,o as t,c as o,a as e}from"./entry.YJh_lbup.js";const c={class:"hero min-h-full"},a=e("div",{class:"px-5 w-full"},[e("div",{class:"grid md:grid-cols-12 gap-5 w-full items-center justify-items-center"},[e("div",{class:"max-w-md text-center col-span-4"}," profile "),e("div",{class:"col-span-8 max-h-[80dvh] overflow-auto scroll-m-1"}," timeline ")])],-1),l=[a],m=s({__name:"index",setup(i){return(n,r)=>(t(),o("div",c,l))}});export{m as default};
+//# sourceMappingURL=index.CAf2_aYi.js.map
