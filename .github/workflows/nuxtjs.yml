@@ -112,3 +112,5 @@ jobs:
           # folder: '.output/public'
           # clean: true
         uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
