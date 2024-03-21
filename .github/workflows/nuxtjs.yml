@@ -84,10 +84,11 @@ jobs:
         id: deployment
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          TOKEN: ${{ secrets.GH_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: '.output/public'
-          CLEAN: true
+          token: ${{ secrets.GH_TOKEN }}
+          # ssh-key: ${{ secrets.DEPLOY_KEY }}
+          branch: gh-pages
+          folder: '.output/public'
+          clean: true
 
   # Deployment job
   # deploy:
