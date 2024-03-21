@@ -1,18 +1,17 @@
 <template>
-  <!doctype html>
-  <Html :class="mode" :data-theme="mode" lang="es">
+  <html :class="mode" :data-theme="mode" lang="es">
     <head>
       <title>Briefcase Vue</title>
     </head>
-    <Body
+    <body
       class="antialiased duration-300 transition-colors min-w-full min-h-screen bg-base-200"
     >
       <NuxtLayout>
         <NuxtLoadingIndicator :height="5" :duration="3000" :throttle="400" />
         <NuxtPage />
       </NuxtLayout>
-    </Body>
-  </Html>
+    </body>
+  </html>
 </template>
 
 <script setup lang="ts">
