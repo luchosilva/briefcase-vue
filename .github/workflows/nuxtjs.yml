@@ -103,6 +103,6 @@ jobs:
         # with:
           # TOKEN: ${{ secrets.GH_TOKEN }}
           # BRANCH: gh-pages
-          # FOLDER: '../.output/public'
+          # FOLDER: './.output/public'
           # CLEAN: true
         # uses: actions/deploy-pages@v4
