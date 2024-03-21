@@ -95,6 +95,6 @@ jobs:
         with:
           # BRANCH: main
           # FOLDER: '.output/public'
-          FOLDER: '.dist'
+          FOLDER: dist
           CLEAN: true
         # uses: actions/deploy-pages@v4
