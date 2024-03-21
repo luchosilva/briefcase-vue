@@ -93,8 +93,8 @@ jobs:
         id: deployment
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.GH_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: './.output/public'
+          FOLDER: '../.output/public'
           CLEAN: true
         # uses: actions/deploy-pages@v4
