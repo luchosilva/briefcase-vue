@@ -81,8 +81,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.output/public
-          # path: ./dist
+          # path: ./.output/public
+          path: ./dist
       # - name: Deploy to GitHub Pages
         # id: deployment
         # uses: JamesIves/github-pages-deploy-action@v4.4.0
