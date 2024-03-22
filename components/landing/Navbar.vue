@@ -17,12 +17,19 @@
           <Icon name="la:language" size="1.2em" />
         </button>
         <ul
-          class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-lg w-40 border dark:border-none">
-          <li v-for="availableLocale in availableLocales" :key="availableLocale.code">
-            <a role="button" @click="changeLocale(availableLocale.code)" class="cursor-pointer">
+          class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-lg w-40 border dark:border-none"
+        >
+          <li
+            v-for="availableLocale in availableLocales"
+            :key="availableLocale.code"
+          >
+            <button
+              @click="changeLocale(availableLocale.code)"
+              class="cursor-pointer"
+            >
               <Icon :name="availableLocale.icon" />
               {{ availableLocale.name }}
-            </a>
+            </button>
           </li>
         </ul>
       </div>
@@ -32,18 +39,19 @@
           <Icon name="uil:sun" size="1.2em" />
         </button>
         <ul
-          class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-box w-40">
+          class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-box w-40"
+        >
           <li>
-            <a role="button" @click="setTheme('light')" class="cursor-pointer">
+            <button @click="setTheme('light')" class="cursor-pointer">
               <Icon name="uil:sun" />
-              {{ $t('landing.nav.themeSelector.light') }}
-            </a>
+              {{ $t("landing.nav.themeSelector.light") }}
+            </button>
           </li>
           <li>
-            <a role="button" @click="setTheme('dark')" class="cursor-pointer">
+            <button @click="setTheme('dark')" class="cursor-pointer">
               <Icon name="uil:moon" />
-              {{ $t('landing.nav.themeSelector.dark') }}
-            </a>
+              {{ $t("landing.nav.themeSelector.dark") }}
+            </button>
           </li>
         </ul>
       </div>
@@ -52,37 +60,37 @@
 </template>
 
 <script setup lang="ts">
-const theme = useState('mode')
+const theme = useState("mode");
 
-const mode = useState('mode')
+const mode = useState("mode");
 
-const isLightMode = computed(() => mode.value === 'light')
+const isLightMode = computed(() => mode.value === "light");
 
 const setTheme = (code: string) => {
-  theme.value = code
-}
+  theme.value = code;
+};
 
-import { setLocale as veeSetLocale } from '@vee-validate/i18n'
+import { setLocale as veeSetLocale } from "@vee-validate/i18n";
 
 interface Locale {
-  code: string
-  name: string
-  icon: string
-  file: string
+  code: string;
+  name: string;
+  icon: string;
+  file: string;
 }
 
-const { locale, locales, setLocale } = useI18n()
+const { locale, locales, setLocale } = useI18n();
 
-const isSpanishMode = computed(() => locale.value === 'es')
+const isSpanishMode = computed(() => locale.value === "es");
 
 const availableLocales = computed(() => {
   return (locales.value as Locale[]).filter(
     (i: any): any => i.code !== locale.value
-  )
-})
+  );
+});
 
 const changeLocale = (code: string) => {
-  setLocale(code)
-  veeSetLocale(code)
-}
+  setLocale(code);
+  veeSetLocale(code);
+};
 </script>
