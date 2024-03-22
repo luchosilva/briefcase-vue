@@ -44,13 +44,13 @@
           <li>
             <button @click.prevent="() => setTheme('light')" class="cursor-pointer">
               <Icon name="uil:sun" />
-              {{ $t("landing.nav.themeSelector.light") }}
+              {{ t("landing.nav.themeSelector.light") }}
             </button>
           </li>
           <li>
             <button @click.prevent="() => setTheme('dark')" class="cursor-pointer">
               <Icon name="uil:moon" />
-              {{ $t("landing.nav.themeSelector.dark") }}
+              {{ t("landing.nav.themeSelector.dark") }}
             </button>
           </li>
         </ul>
@@ -77,7 +77,7 @@ interface Locale {
   file: string;
 }
 
-const { locale, locales, setLocale } = useI18n();
+const { t, locale, locales, setLocale } = useI18n();
 
 const isSpanishMode = computed(() => locale.value === "es");
 
