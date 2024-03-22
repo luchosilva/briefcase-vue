@@ -6,7 +6,7 @@ const NUXT_PUBLIC_API_BASE = process.env.NUXT_PUBLIC_API_BASE;
 
 export default defineNuxtConfig({
   experimental: {
-    payloadExtraction: true,
+    payloadExtraction: false,
   },
   ssr: true,
   spaLoadingTemplate: false,
