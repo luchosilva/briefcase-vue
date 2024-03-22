@@ -19,7 +19,7 @@
         <ul
           class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-lg w-40 border dark:border-none">
           <li v-for="availableLocale in availableLocales" :key="availableLocale.code">
-            <a @click="changeLocale(availableLocale.code)" class="cursor-pointer">
+            <a role="button" @click="changeLocale(availableLocale.code)" class="cursor-pointer">
               <Icon :name="availableLocale.icon" />
               {{ availableLocale.name }}
             </a>
@@ -34,13 +34,13 @@
         <ul
           class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-box w-40">
           <li>
-            <a @click="setTheme('light')" class="cursor-pointer">
+            <a role="button" @click="setTheme('light')" class="cursor-pointer">
               <Icon name="uil:sun" />
               {{ $t('landing.nav.themeSelector.light') }}
             </a>
           </li>
           <li>
-            <a @click="setTheme('dark')" class="cursor-pointer">
+            <a role="button" @click="setTheme('dark')" class="cursor-pointer">
               <Icon name="uil:moon" />
               {{ $t('landing.nav.themeSelector.dark') }}
             </a>
