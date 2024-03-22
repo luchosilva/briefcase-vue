@@ -5,12 +5,11 @@ import Locales from "./locales";
 const NUXT_PUBLIC_API_BASE = process.env.NUXT_PUBLIC_API_BASE;
 
 export default defineNuxtConfig({
-  ssr: true,
-  spaLoadingTemplate: false,
   experimental: {
     payloadExtraction: true,
   },
-  // devtools: { enabled: true },
+  ssr: true,
+  spaLoadingTemplate: false,
   runtimeConfig: {
     public: {
       apiBase: NUXT_PUBLIC_API_BASE,
@@ -55,6 +54,7 @@ export default defineNuxtConfig({
 
   nitro: {
     debug: true,
+    inlineDynamicImports: true,
     prerender: {
       crawlLinks: true,
       failOnError: false,

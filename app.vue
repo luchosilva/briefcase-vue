@@ -35,10 +35,16 @@ useHead({
     },
   ],
   link: [
-    { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      href: "/favicon.ico",
+      crossorigin: "",
+    },
     {
       rel: "preconnect",
       href: "https://fonts.googleapis.com",
+      crossorigin: "",
     },
     {
       rel: "preconnect",
@@ -48,6 +54,7 @@ useHead({
     {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap",
+      crossorigin: "",
     },
   ],
   script: [
