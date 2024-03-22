@@ -9,7 +9,9 @@
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           <slot name="header">
-            <landing-navbar />
+            <client-only fallback-tag="span" fallback="Loading on server...">
+              <landing-navbar />
+            </client-only>
           </slot>
           <div class="flex-1 w-full flex flex-col">
             <div
