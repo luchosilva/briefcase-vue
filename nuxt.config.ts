@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: true,
   },
-  ssr: true,
+  ssr: false,
   spaLoadingTemplate: false,
   runtimeConfig: {
     public: {
