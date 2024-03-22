@@ -79,11 +79,11 @@ jobs:
         # run: ${{ steps.detect-package-manager.outputs.manager }} run generate
         # run: ${{ steps.detect-package-manager.outputs.manager }} nuxi generate
         run: npx nuxt build --preset github-pages
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
+      # - name: Upload artifact
+        # uses: actions/upload-pages-artifact@v3
+        # with:
           # path: ./.output/public
-          path: ./dist
+          # path: ./dist
       # - name: Deploy to GitHub Pages
         # id: deployment
         # uses: JamesIves/github-pages-deploy-action@v4.4.0
@@ -105,13 +105,13 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        # uses: JamesIves/github-pages-deploy-action@v4.4.0
-        # with:
-          # token: ${{ secrets.GH_TOKEN }}
-          # ssh-key: ${{ secrets.DEPLOY_KEY }}
-          # branch: gh-pages
-          # folder: '.output/public'
-          # clean: true
-        uses: actions/deploy-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           token: ${{ secrets.GH_TOKEN }}
+          # ssh-key: ${{ secrets.DEPLOY_KEY }}
+          branch: gh-pages
+          folder: ./.output/public
+          clean: true
+        # uses: actions/deploy-pages@v4
+        # with:
+          # token: ${{ secrets.GH_TOKEN }}
