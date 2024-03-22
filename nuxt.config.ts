@@ -8,8 +8,11 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false,
   },
+
   ssr: true,
+
   spaLoadingTemplate: false,
+  
   runtimeConfig: {
     public: {
       apiBase: NUXT_PUBLIC_API_BASE,
