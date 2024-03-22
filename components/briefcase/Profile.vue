@@ -13,7 +13,7 @@
       class="btn btn-primary btn-xs sm:btn-sm md:btn-md lg:btn-lg"
     >
       {{ t("pages.index.contact-by-email") }}
-    </button>
+    </a>
   </div>
 </template>
 
