@@ -24,7 +24,7 @@
             :key="availableLocale.code"
           >
             <button
-              @click="changeLocale(availableLocale.code)"
+              @click.prevent="() => changeLocale(availableLocale.code)"
               class="cursor-pointer"
             >
               <Icon :name="availableLocale.icon" />
@@ -42,13 +42,13 @@
           class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-box w-40"
         >
           <li>
-            <button @click="setTheme('light')" class="cursor-pointer">
+            <button @click.prevent="() => setTheme('light')" class="cursor-pointer">
               <Icon name="uil:sun" />
               {{ $t("landing.nav.themeSelector.light") }}
             </button>
           </li>
           <li>
-            <button @click="setTheme('dark')" class="cursor-pointer">
+            <button @click.prevent="() => setTheme('dark')" class="cursor-pointer">
               <Icon name="uil:moon" />
               {{ $t("landing.nav.themeSelector.dark") }}
             </button>
@@ -62,9 +62,7 @@
 <script setup lang="ts">
 const theme = useState("mode");
 
-const mode = useState("mode");
-
-const isLightMode = computed(() => mode.value === "light");
+const isLightMode = computed(() => theme.value === "light");
 
 const setTheme = (code: string) => {
   theme.value = code;

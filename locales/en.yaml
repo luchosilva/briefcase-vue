@@ -5,6 +5,7 @@ landing:
         light: 'Light'
     foot:
       description: ''
+
 pages:
   index:
     title: 'Luis Hernán Silva Quezada'
