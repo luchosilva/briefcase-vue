@@ -42,13 +42,19 @@
           class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-box w-40"
         >
           <li>
-            <button @click.prevent="() => setTheme('light')" class="cursor-pointer">
+            <button
+              @click.prevent="() => setTheme('light')"
+              class="cursor-pointer"
+            >
               <Icon name="uil:sun" />
               {{ t("landing.nav.themeSelector.light") }}
             </button>
           </li>
           <li>
-            <button @click.prevent="() => setTheme('dark')" class="cursor-pointer">
+            <button
+              @click.prevent="() => setTheme('dark')"
+              class="cursor-pointer"
+            >
               <Icon name="uil:moon" />
               {{ t("landing.nav.themeSelector.dark") }}
             </button>
@@ -65,6 +71,7 @@ const theme = useState("mode");
 const isLightMode = computed(() => theme.value === "light");
 
 const setTheme = (code: string) => {
+  console.log("setTheme", code);
   theme.value = code;
 };
 
@@ -88,6 +95,7 @@ const availableLocales = computed(() => {
 });
 
 const changeLocale = (code: string) => {
+  console.log("changeLocale", code);
   setLocale(code);
   veeSetLocale(code);
 };

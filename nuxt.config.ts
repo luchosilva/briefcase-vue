@@ -11,8 +11,13 @@ export default defineNuxtConfig({
 
   ssr: true,
 
+  app: {
+    baseURL: "/briefcase-vue/",
+    buildAssetsDir: "assets",
+  },
+
   spaLoadingTemplate: false,
-  
+
   runtimeConfig: {
     public: {
       apiBase: NUXT_PUBLIC_API_BASE,
