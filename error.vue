@@ -1,5 +1,5 @@
 <template>
-  <html :class="mode" :data-theme="mode" lang="en">
+  <html :class="mode" :data-theme="mode" :lang="locale">
     <head>
       <title>Error</title>
     </head>
@@ -19,7 +19,7 @@
             </div>
             <div class="mt-9">
               <button class="btn btn-primary ml-3" @click="handleError">
-                <!-- {{ $t("error.back") }} -->
+                {{ t("error.back") }}
               </button>
             </div>
           </div>
@@ -38,6 +38,8 @@ const props: any = defineProps({
     default: () => ({ statusCode: 404, message: "Not Found" }),
   },
 });
+
+const { t, locale } = useI18n();
 
 const handleError = () => clearError({ redirect: "/" });
 </script>

@@ -66,7 +66,7 @@
 </template>
 
 <script setup lang="ts">
-const theme = useState("mode");
+const theme = useState("mode", () => "light");
 
 const isLightMode = computed(() => theme.value === "light");
 

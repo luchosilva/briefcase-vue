@@ -1,8 +1,5 @@
 <template>
-  <html :class="mode" :data-theme="mode" lang="es">
-    <head>
-      <title>Briefcase Vue</title>
-    </head>
+  <html :class="mode" :data-theme="mode" :lang="locale">
     <body
       class="antialiased duration-300 transition-colors min-w-full min-h-screen bg-base-200"
     >
@@ -15,11 +12,11 @@
 </template>
 
 <script setup lang="ts">
-import { setLocale } from "@vee-validate/i18n";
+import { setLocale as setLocaleVee } from "@vee-validate/i18n";
 
 const mode = useState("mode", () => "light");
 
-// const theme = useState('theme.current', () => 'darkMain')
+const { locale, setLocale } = useI18n();
 
 const app: any = useAppConfig();
 
@@ -31,7 +28,7 @@ useHead({
     {
       hid: "description",
       name: "description",
-      content: "Inventario",
+      content: "Briefcase Vue",
     },
   ],
   link: [
@@ -64,5 +61,6 @@ useHead({
   ],
 });
 
+setLocaleVee("es");
 setLocale("es");
 </script>
