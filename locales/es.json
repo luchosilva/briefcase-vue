@@ -1,0 +1,45 @@
+{
+    "landing": {
+        "nav": {
+            "themeSelector": {
+                "dark": "Oscuro",
+                "light": "Claro"
+            }
+        },
+        "foot": {
+            "description": ""
+        }
+    },
+    "pages": {
+        "index": {
+            "title": "Luis Hernán Silva Quezada",
+            "description": "Desarrollador de software 🚀",
+            "contact-by-email": "Envíame un correo ✉️",
+            "projects": [
+                {
+                    "name": "Frint S.A.",
+                    "description": "➢ Corrección, desarrollo, despliegue y mantención de una aplicación móvil para realizar inventarios mediante lectura de códigos de barra, escrita en lenguaje Java para el ERP de la empresa. \n ➢ Apoyo en el área de soporte técnico de la empresa.",
+                    "range": "Nov/2021 - Dic/2022"
+                },
+                {
+                    "name": "Smart Araucanía - Hub Global Smart City",
+                    "description": "➢ Desarrollo, despliegue y mantención de una plataforma web que provee distintos servicios alimentados automáticamente mediante microservicios escritos en Python, los cuales fueron alojados en un servidor y orquestados por Docker. \n ➢ Análisis, desarrollo, construcción y mejora continua de softwares para integrarse con la plataforma web intranet de la UFRO, utilizando las tecnologías de React, NextJs, Redux, TailwindCSS, TypeScript, NestJs, SP-SQL, SQL, Gitlab.",
+                    "range": "Mar/2022 - Dic/2022"
+                },
+                {
+                    "name": "Acroventus S.A.",
+                    "description": "➢ Análisis, desarrollo, construcción y mejora continua de softwares utilizando las tecnologías de Vue.js, NuxtJs, Angular, TailwindCSS, BootstrapCSS, TypeScript, NestJs, Loopback, SP-SQL, SQL, Gitlab.",
+                    "range": "Dic/2022 - Feb/2024"
+                },
+                {
+                    "name": "",
+                    "description": "Próximamente...",
+                    "range": ""
+                }
+            ]
+        }
+    },
+    "error": {
+        "back": "Volver"
+    }
+}
