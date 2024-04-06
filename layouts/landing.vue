@@ -5,7 +5,7 @@
     <div
       class="flex flex-col min-h-screen dark:bg-gradient-to-br dark:from-cyan-800 dark:to-blue-900"
     >
-      <div class="drawer h-screen">
+      <div class="drawer">
         <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content flex flex-col">
           <slot name="header">
