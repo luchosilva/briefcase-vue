@@ -1,23 +1,28 @@
 <template>
-  <nav class="w-full navbar">
-    <div class="md:container md:mx-auto">
-      <div class="flex flex-1 gap-5 px-2 mx-2">
-        <div class="prose text-xl font-bold">
-          <icon v-if="isLightMode" name="heroicons:sun-solid" />
-          <icon v-else name="heroicons:moon-solid" />
-        </div>
-        <div class="prose text-xl font-bold">
-          <icon v-if="isSpanishMode" name="openmoji:flag-spain" />
-          <icon v-else name="openmoji:flag-united-states" />
-        </div>
+  <nav
+    class="w-full navbar justify-between items-center h-20 py-4 bg-blue-600-color px-7"
+  >
+    <div class="flex items-center">
+      <div class="prose text-xl md:text-4xl font-bold">
+        <Icon name="logos:vue" />
       </div>
+      <div class="prose text-xl md:text-4xl font-bold">
+        <icon v-if="isLightMode" name="heroicons:sun-solid" />
+        <icon v-else name="heroicons:moon-solid" />
+      </div>
+      <div class="prose text-xl md:text-4xl font-bold">
+        <icon v-if="isSpanishMode" name="openmoji:flag-spain" />
+        <icon v-else name="openmoji:flag-united-states" />
+      </div>
+    </div>
 
+    <div class="flex items-center">
       <div class="dropdown dropdown-end">
         <button tabindex="0" class="btn btn-ghost">
           <Icon name="la:language" size="1.2em" />
         </button>
         <ul
-          class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-lg w-40 border dark:border-none"
+          class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-base-200 rounded-lg w-40 border dark:border-none"
         >
           <li
             v-for="availableLocale in availableLocales"
@@ -39,7 +44,7 @@
           <Icon name="uil:sun" size="1.2em" />
         </button>
         <ul
-          class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-gray-50 bg-opacity-10 rounded-box w-40"
+          class="menu menu-compact dropdown-content z-[1] mt-3 p-2 shadow bg-base-200 rounded-box w-40 border dark:border-none"
         >
           <li>
             <button
