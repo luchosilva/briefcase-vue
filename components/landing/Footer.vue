@@ -12,5 +12,5 @@
 </template>
 
 <script setup lang="ts">
-const briefcaseUrl = new URL("https://luchosilva.github.io/briefcase-vue/");
+const briefcaseUrl = new URL("https://luchosilva.github.io/briefcase-react/");
 </script>
